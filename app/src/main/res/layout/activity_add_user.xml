@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".AddUserActivity">
+
+    <EditText
+        android:id="@+id/add_name"
+        android:layout_width="277dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/pic1"
+        android:ems="10"
+        android:hint="Name:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="356dp"
+        android:text="Info Product"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <Button
+        android:id="@+id/btnViewAll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#0AB5A5"
+        android:text="add info"
+        android:textColor="#4E4D4D"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/bbe_edit_text"
+        android:layout_width="277dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg"
+        android:ems="10"
+        android:hint="BBE:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/add_name"
+        app:layout_constraintStart_toStartOf="@+id/add_name"
+        app:layout_constraintTop_toBottomOf="@+id/add_name" />
+
+    <EditText
+        android:id="@+id/mfg_edit_text"
+        android:layout_width="277dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg"
+        android:ems="10"
+        android:hint="MFG:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/bbe_edit_text"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/bbe_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/bbe_edit_text" />
+
+    <EditText
+        android:id="@+id/exp_edit_text"
+        android:layout_width="277dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg"
+        android:ems="10"
+        android:hint="EXP:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/mfg_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/mfg_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/mfg_edit_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
